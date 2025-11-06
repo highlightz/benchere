@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌入飞书多维表格示例</title>
+    
+    <style>
+        /* 这是一个可选样式，用于让 iframe 容器按比例缩放 */
+        .responsive-iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            /* 16:9 的宽高比 (9 / 16 = 0.5625) */
+            padding-top: 56.25%; 
+        }
+        
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>我的网页内容</h1>
+
+    <hr>
+
+    <h2>响应式嵌入（推荐）</h2>
+    <p>这个版本会根据浏览器窗口大小自动调整宽高比：</p>
+
+    <div class="responsive-iframe-container">
+        <iframe 
+            src="https://ff9z7w8rrr.feishu.cn/share/base/view/shrcn4ccCz5hyyxFii8d5bvnwWd"
+            allowfullscreen
+        ></iframe>
+    </div>
+
+</body>
+</html>
